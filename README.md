@@ -35,7 +35,7 @@ def add_task():
     # Prompt user to enter task details
     username = input("Enter the username of the person the task is assigned to: ")
     title = input("Enter the title of the task: ")
-    description = input("Enter the description of the task: ")
+    descrip = input("Enter the description of the task: ")
     # Using the previously imported datetime module to calculate the current date
     current_date = datetime.date.today()  # Get the current date
     # Prompt user to enter the due date of the task
@@ -50,7 +50,7 @@ def add_task():
         with open(relative_path, "a") as file:
             # Write the task details to the file in the specified format
             file.write(
-                f"\n{username}, {title}, {description}, {due_date}, {current_date}, Not completed"
+                f"\n{username}, {title}, {descrip}, {due_date}, {current_date}, Not completed"
             )
             print(
                 "Task added successfully!"
