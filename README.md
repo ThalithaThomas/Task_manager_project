@@ -29,7 +29,7 @@ def authenticate_user(username, password):
     except FileNotFoundError:
         return "file not found!!!"  # Handle the case if the file is not found
 
-
+#function to add task
 def add_task():
 
     # Prompt user to enter task details
@@ -58,7 +58,7 @@ def add_task():
     except FileNotFoundError:
         return "file not found!"  # Handle the case if the file is not found
 
-
+#function to view task using a username
 def view_my_tasks(username):
     try:
 
