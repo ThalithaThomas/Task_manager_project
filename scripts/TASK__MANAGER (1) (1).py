@@ -14,7 +14,7 @@ def authenticate_user(username, password):
     try:
         # Define the relative file path for the user information
         relative_path = os.path.join(
-            "C:/Users/Blue Chelsea/Documents/capstone project/user.txt"
+            "capstone_project","user.txt"
         )
         # Open the user file in read mode and check for username and password matches
         with open(relative_path, "r") as file:
@@ -29,13 +29,13 @@ def authenticate_user(username, password):
     except FileNotFoundError:
         return "file not found!!!"  # Handle the case if the file is not found
 
-#function to add task
+#function that will allow users and admin to add task
 def add_task():
 
     # Prompt user to enter task details
     username = input("Enter the username of the person the task is assigned to: ")
     title = input("Enter the title of the task: ")
-    descrip = input("Enter the description of the task: ")
+    description = input("Enter the description of the task: ")
     # Using the previously imported datetime module to calculate the current date
     current_date = datetime.date.today()  # Get the current date
     # Prompt user to enter the due date of the task
@@ -43,14 +43,14 @@ def add_task():
     try:
         # Define the file path to the tasks file
         relative_path = os.path.join(
-            "C:/Users/Blue Chelsea/Documents/capstone project/tasks.txt"
+             "capstone_project","tasks.txt"
         )  # Define the relative file path for the tasks
 
         # Open the tasks file in append mode and write the task details
         with open(relative_path, "a") as file:
             # Write the task details to the file in the specified format
             file.write(
-                f"\n{username}, {title}, {descrip}, {due_date}, {current_date}, Not completed"
+                f"\n{username}, {title}, {description}, {due_date}, {current_date}, Not completed"
             )
             print(
                 "Task added successfully!"
@@ -58,12 +58,12 @@ def add_task():
     except FileNotFoundError:
         return "file not found!"  # Handle the case if the file is not found
 
-#function to view task using a username
+#function that will allow users and admin to view task using username
 def view_my_tasks(username):
     try:
 
         relative_path = os.path.join(
-            "C:/Users/Blue Chelsea/Documents/capstone project/tasks.txt"
+             "capstone_project","tasks.txt"
         )  # Define the relative file path for the tasks
 
         with open(relative_path, "r") as file:  # Open the tasks file in read mode
@@ -91,13 +91,13 @@ def view_my_tasks(username):
     except Exception as e:
         return "Error occured. please try again."  # Handle any exceptions and display an error message
 
-
+#function to calculate the total number of users and tasks
 def display_statistics():
 
     try:
 
         relative_path = os.path.join(
-            "C:/Users/Blue Chelsea/Documents/capstone project/user.txt"
+             "capstone_project","user.txt"
         )  # Define the relative file path for the user
 
         with open(relative_path, "r") as user_file:
@@ -109,7 +109,7 @@ def display_statistics():
         current_dir = os.getcwd()  # Get the current directory
 
         relative_path = os.path.join(
-            "C:/Users/Blue Chelsea/Documents/capstone project/tasks.txt"
+            "capstone_project","tasks.txt"
         )  # Define the relative file path for the tasks
 
         with open(relative_path, "r") as task_file:  # Open the tasks file in read mode
@@ -171,7 +171,7 @@ while True:
             )  # Prompt to confirm the password
             if new_password == confirm_password:  # Check if the passwords match
                 relative_path = os.path.join(
-                    "C:/Users/Blue Chelsea/Documents/capstone project/user.txt"
+                     "capstone_project","user.txt"
                 )  # Create a relative path for the user file
 
                 with open(
@@ -198,7 +198,7 @@ while True:
                 # Open and read the tasks from the tasks.txt file
                 # create a relative path
                 relative_path2 = os.path.join(
-                    "C:/Users/Blue Chelsea/Documents/capstone project/tasks.txt"
+                     "capstone_project","tasks.txt"
                 )
                 with open(
                     relative_path2, "r+"
@@ -276,7 +276,7 @@ e - exit
 
                 # create a relative path
                 relative_path2 = os.path.join(
-                    "C:/Users/Blue Chelsea/Documents/capstone project/tasks.txt"
+                    "capstone_project","tasks.txt"
                 )
                 with open(
                     relative_path2, "r+"

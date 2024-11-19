@@ -1,0 +1,9 @@
+admin, Register Users with task_manager.py, Use task_manager.py to add the usernames and passwords for all team members that will be using this program., 10 Oct 2019, 20 Oct 2019, No
+admin, Assign initial tasks, Use task_manager.py to assign each team member with appropriate tasks, 10 Oct 2019, 25 Oct 2019thali, application, build a dating website, 2023-05-09, 2023-11-28, No completed
+1, 2, 3, 2023-12-28, 2023-11-28, No completed
+thuli, catering, gala dinner, 2023-12-25, 2023-11-28, No completed
+thuli, cleaning, house no 23, 2023-11-29, 2023-11-28, No completed
+thuli, web, build a dating website, 2023-12-12, 2023-12-02, No completed
+admin, user registration, new employee user registration, 2024-01-15, 2023-12-02, No completed
+thalitha, capstone 1v, finish task, 2023-12-05, 2023-12-04, Not completed
+romeo, update, check last year's projects, 2024-10-04, 2024-11-19, Not completed
